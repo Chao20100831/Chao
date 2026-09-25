@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系与致谢</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+        body {
+            background: #f8f9fa;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .item {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            background: #fff;
+            padding:30px;
+            border-radius:14px;
+            box-shadow:0 4px 14px rgba(0,0,0,0.1);
+            margin-bottom:30px;
+        }
+        .img-box {
+            flex: 1;
+        }
+        .img-box img {
+            width: 100%;
+            border-radius:12px;
+            box-shadow:0 3px 10px rgba(0,0,0,0.1);
+        }
+        .text-box {
+            flex:1;
+        }
+        .text-box p{
+            font-size:22px;
+            color:#000000;
+            line-height:1.8;
+        }
+        /*手机自动变成上下排列*/
+        @media (max-width:768px){
+            .item{
+                flex-direction:column;
+                gap:20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 第一块：联系电话 -->
+        <div class="item">
+            <div class="img-box">
+                <!-- 替换为你的图片，放在images文件夹 -->
+                <img src="images/phone-img.jpg" alt="图片">
+            </div>
+            <div class="text-box">
+                <p>活动人电话：17820312625（G3-3余东倩）</p>
+            </div>
+        </div>
+
+        <!-- 第二块：感谢文字 -->
+        <div class="item">
+            <div class="img-box">
+                <!-- 替换为你的第二张图片 -->
+                <img src="images/thank-img.jpg" alt="图片">
+            </div>
+            <div class="text-box">
+                <p>感谢捐款，好人一生平安</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
